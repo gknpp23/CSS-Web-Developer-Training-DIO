@@ -28,6 +28,7 @@ time, mark, audio, video {
 	--font-color: #33A8DB80;
     box-sizing: border-box;
 	vertical-align: baseline;
+	text-decoration: none;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
