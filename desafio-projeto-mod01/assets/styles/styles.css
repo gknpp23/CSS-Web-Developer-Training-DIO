@@ -104,13 +104,13 @@ span {
 }
 
 #transform-world {
-    height: 550px;
+    height: 80vh;
     background-size: cover;
     background-image: url("../images/woman-code.png");
     background-attachment: fixed;
     border-top: 1px solid #33A8DB80;
     border-bottom: 1px solid #33A8DB80;
-    padding: 200px;
+    padding: 12rem;
 }
 
 #transform-world p {
