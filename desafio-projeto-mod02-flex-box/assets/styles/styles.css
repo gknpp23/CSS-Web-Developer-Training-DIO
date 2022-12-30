@@ -1,4 +1,28 @@
 /* IMportação do RESET */
 @import url(reset.css);
 
+header nav{
+    padding: 5px 16px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 24px;
+   
+}
+#logo{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+}
+#search {
+    display: flex;
+    align-items: center;
+}
+
+#icons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 24px;
+}
 
