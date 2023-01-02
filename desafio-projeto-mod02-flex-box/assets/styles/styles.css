@@ -8,6 +8,17 @@ header nav{
     margin-bottom: 24px;
    
 }
+h1 {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 23px;
+}
+h2 {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 16px;
+}
+
 #logo{
     display: flex;
     justify-content: space-between;
@@ -28,8 +39,27 @@ header nav{
 
 main{
     display: flex;
+    padding-left: 70px;
 }
 aside {
     display: flex;
+    flex-direction: column;
     align-items: flex-start;
+    gap: 16px;
+}
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap:16px;
+}
+.video-sidebar {
+    display: flex;
+    align-items: flex-start;
+}
+#description {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
