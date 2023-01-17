@@ -5,6 +5,7 @@
 
 body{
     font-size: 12px;
+    margin-bottom: 150px;
     display: grid;
     grid-template-columns: 15rem 2fr;
     grid-template-rows: max-content 2fr;
@@ -28,7 +29,7 @@ nav div {
     display: inline;
 }
 header{
-    padding: 1.5rem;
+    padding: .75rem 1.5rem 1.75rem;
     grid-area: header;
     
 }
@@ -49,14 +50,15 @@ header nav #search{
     padding-right: 1.2em;
 }
 #search img {
-    padding: 6px 8px;
+    padding: 6px 10px;
+    margin-left: -3px;
     background-color: #F8F8F8;
     border: 1px solid #CCCCCC
 }
 #search input{
     background: #FFFFFF;
     border: 1px solid #CCCCCC;
-    min-width: 7rem;
+    min-width: 15rem;
     min-height: 2.1rem;
 }
 #search input:focus {
@@ -78,7 +80,7 @@ aside article span {
 }
 /* Conteúdo principal */
 section{
-    padding: .15em 2.50em .15em .15em;
+    padding: .15em 2.50em .50em .15em;
     grid-area: video;
     display: grid;
     grid-template-columns: repeat(4,1fr);
