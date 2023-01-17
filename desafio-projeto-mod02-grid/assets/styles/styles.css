@@ -1,13 +1,32 @@
 @import url('reset.css');
-header{
-    padding:1em;
+/*
+
+*/
+
+body{
+    display: grid;
+    grid-template-columns: 15rem 2fr;
+    grid-template-rows: max-content 2fr;
+    grid-auto-flow: column;
+    grid-template-areas:
+        "header header"
+        "sidebar video";
+    justify-content: space-between;
 }
-header nav{
+nav div {
+    display: inline;
+}
+header{
+    /*  */
+    padding: 1.5rem;
+    grid-area: header;
+    
+}
+header nav {
     display: grid;
     grid-template-columns: repeat(3, auto );
     align-items: center;
 }
-
 header nav #icons{
     justify-self: end;
 }
@@ -15,8 +34,18 @@ header nav #search{
     justify-self: center;
     
 }
-
-
 .icon{
     padding-right: 1.2em;
+}
+
+aside{
+    grid-area: sidebar;
+    
+}
+section{
+    grid-area: video;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap:20px;
 }
