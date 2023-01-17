@@ -13,11 +13,18 @@ body{
         "sidebar video";
     justify-content: space-between;
 }
+
+/* Alinhamento de texto com imagem */
+img, p {
+    display: inline-block;
+    vertical-align:bottom;
+}
+/* Header */
+
 nav div {
     display: inline;
 }
 header{
-    /*  */
     padding: 1.5rem;
     grid-area: header;
     
@@ -32,16 +39,41 @@ header nav #icons{
 }
 header nav #search{
     justify-self: center;
+    align-self: stretch;
     
 }
 .icon{
     padding-right: 1.2em;
 }
-
+#search img {
+    padding: 6px 8px;
+    background-color: #F8F8F8;
+    border: 1px solid #CCCCCC
+}
+#search input{
+    background: #FFFFFF;
+    border: 1px solid #CCCCCC;
+    min-width: 7rem;
+    min-height: 2.1rem;
+}
+#search input:focus {
+    box-shadow: 0;
+    outline: 0;
+}
+/* Sidebar */
 aside{
     grid-area: sidebar;
+    padding: 1.5rem;
     
 }
+article{
+    margin-bottom: 0.85em;
+
+}
+span {
+    margin-left: 1rem;
+}
+/* Conteúdo principal */
 section{
     grid-area: video;
     display: grid;
