@@ -4,6 +4,7 @@
 */
 
 body{
+    font-size: 12px;
     display: grid;
     grid-template-columns: 15rem 2fr;
     grid-template-rows: max-content 2fr;
@@ -14,11 +15,13 @@ body{
     justify-content: space-between;
 }
 
-/* Alinhamento de texto com imagem */
+/* Alinhamento de texto com imagem 
+*/
 img, p {
     display: inline-block;
     vertical-align:bottom;
 }
+
 /* Header */
 
 nav div {
@@ -63,21 +66,49 @@ header nav #search{
 /* Sidebar */
 aside{
     grid-area: sidebar;
-    padding: 1.5rem;
+    padding: 0 1.5rem;
     
 }
-article{
+aside article{
     margin-bottom: 0.85em;
 
 }
-span {
+aside article span {
     margin-left: 1rem;
 }
 /* Conteúdo principal */
 section{
+    padding: .15em 2.50em .15em .15em;
     grid-area: video;
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-    gap:20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: repeat(3, 240px);
+    gap:30px;             
 }
+
+.video p{
+    color:#515151;
+}
+.video article{
+    margin-top: 1em;
+    display: flex;
+    align-items: flex-start;
+}
+.video article div{
+    text-align: start;
+    padding: .75em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+.video article div h2{
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+
+
+
+
