@@ -1,1 +1,48 @@
 @import url(reset.css);
+
+body{
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+h1{
+    font-family: 'Luckiest Guy', cursive;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 32px;
+
+}
+/* Header */
+ header {
+    background-image: url("../image/Header-Background-MB.png");
+    background-size: cover;
+    color: #FFFFFF;
+    padding: 70px 24px;
+    margin: auto;
+    /* 
+    height: 506px;
+    width: 428px;
+    */
+ }
+ header p{
+    margin: 2rem auto;
+ }
+ .download {
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+    border-radius: 28px;
+    text-align: center;
+    margin-bottom: 15px;
+    width: 381px;
+ }
+ #win {
+    background: #FFFFFF;
+    color:  #23272A;
+    ;
+ }
+ #browser {
+    background-color: #23272A;
+    color: #fff;
+ }
