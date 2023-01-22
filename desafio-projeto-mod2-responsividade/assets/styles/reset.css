@@ -4,6 +4,7 @@
 */
 /* Importação de fonte */
 @import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
 
 /* RESET */
 html, body, div, span, applet, object, iframe,
@@ -24,7 +25,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    font-family: 'Open Sans';
+    font-family: 'Open Sans', sans-serif;
     box-sizing: border-box;
 	vertical-align: baseline;
 	text-decoration: none;
