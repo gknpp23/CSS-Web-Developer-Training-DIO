@@ -149,12 +149,19 @@ footer{
    #browser {
       margin-left: 1rem;
    }
-
+   /* Main */
    section {
       display: flex;
       flex-direction: row;
       width: 80vw;
       margin: auto;
+   }
+   .text-content {
+      margin: 1rem;
+      width: 350px;
+   }
+   #sct-02 img {
+      order:1;
    }
    #sct-02, #sct-04{
       background-color: #F6F6F6;
@@ -163,6 +170,7 @@ footer{
       display: flex;
       flex-direction: column;
       gap:1rem;
+      width: 70vw;
    }
    #sct-04 h2{
       font-size: 40px;
@@ -170,5 +178,13 @@ footer{
       text-align: center;
       width: 50%;
    }
+   #sct-04 p{
+      line-height: 22px;
+      text-align: center;
+      margin: 0 2.5rem;
+   }
+   /* Footer */
+   footer{
+      height: 20vh;
+   }
 }
- 
