@@ -1,0 +1,101 @@
+@import url(reset.css);
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
+
+:root {
+    --primary-color: #020228;
+    --secondary-color: #ff00e5;
+    --tertiary-color: #b535f6;
+    --btn-bg-color-gradient: linear-gradient(
+      45deg,
+      #9b34ef 0%,
+      #490cb0 20%,
+      transparent 50%
+    );
+    --btn-link-bg-color: #fff;
+    --btn-link-color: #000;
+    --card-bg-color: linear-gradient(0deg, transparent, #3b1e63);
+    --divider-bg-color: linear-gradient(
+      90deg,
+      #5516ba,
+      rgba(255, 0, 229, 0.5) 80%
+    );
+    --nav-bg-color: rgba(0, 0, 0, 0.3);
+    --text-color: #fff;
+    --link-color: #9e86ff;
+    --form-bg-color: rgba(211, 211, 211, 0.06);
+    --form-field-bg-color: rgba(0, 0, 0, 0.2);
+    --form-field-border: 1px solid rgba(255, 255, 255, 0.7);
+    --form-field-placeholder: rgba(255, 255, 255, 0.7);
+    --form-field-error: rgb(255, 76, 76);
+
+    scroll-behavior: smooth;
+}
+
+/* Custom Scroll */
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--tertiary-color);
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--secondary-color);
+}
+
+/* Button */
+.button {
+    background-color: var(--tertiary-color);
+    color: var(--text-color);
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 4px;
+    padding: 12px 24px;
+    border-radius: 100px;
+    border:none;
+    cursor:pointer;
+}
+
+/* Navbar */
+
+.menu {
+    padding: 12px 16px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top:0;
+    z-index:1;
+    background-color: var(--nav-bg-color);
+}
+
+.menu__logo-image {
+    width: 160px;
+}
+
+.menu__item {
+    margin-right: 24px;
+    color: var(--text-color);
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 0.75rem;
+    text-decoration: none;
+    letter-spacing: 3px;
+}
+
+.menu__item--button {
+    padding: 8px 26px;
+    transition: background 1s, color 1s;
+}
+
+.menu__item--button:hover {
+    background-color: var(--btn-link-bg-color);
+    color: var(--btn-link-color)
+}
+
