@@ -3,8 +3,8 @@
    License: none (public domain)
 */
 /* Importação de fonte */
-@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 /* RESET */
 html, body, div, span, applet, object, iframe,
@@ -25,7 +25,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    font-family: 'Open Sans', sans-serif;
+    font-family: "Raleway", sans-serif;
     box-sizing: border-box;
 	vertical-align: baseline;
 	text-decoration: none;

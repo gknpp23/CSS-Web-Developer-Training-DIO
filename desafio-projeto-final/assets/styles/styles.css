@@ -1,11 +1,5 @@
 @import url(global.css);
 
-* {
-    font-family: "Raleway", sans-serif;
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
 
 body{
     background-color: var(--primary-color);
@@ -39,8 +33,25 @@ body{
 .header__channel{
     object-fit: cover;
 }
+ .header__title {
+    text-transform:uppercase;
+    line-height: 45px;
+    text-align: center;
+    font-size: 3rem;
+    font-weight: bold;
+ }
+ .header__title--light {
+    display: block;
+    font-size: 2rem;
+    font-weight: lighter;
+ }
 
-
+ .header__divider {
+    width: 70%;
+    max-width: 700px;
+    height: 5px;
+    background: var(--divider-bg-color);
+ }
 
 
 
