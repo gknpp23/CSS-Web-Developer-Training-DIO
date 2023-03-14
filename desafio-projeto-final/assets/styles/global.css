@@ -45,6 +45,14 @@
     background: var(--secondary-color);
 }
 
+/* texts */
+p {
+    font-family: "Quicksand", sans-serif;
+}
+.text--small {
+    font-size: 1rem;
+    font-weight: 300;
+}
 /* Button */
 .button {
     background-color: var(--tertiary-color);
@@ -53,8 +61,8 @@
     text-transform: uppercase;
     text-decoration: none;
     letter-spacing: 4px;
-    padding: 12px 24px;
-    border-radius: 100px;
+    padding: 16px 40px;
+    border-radius: 500px;
     border:none;
     cursor:pointer;
 }
