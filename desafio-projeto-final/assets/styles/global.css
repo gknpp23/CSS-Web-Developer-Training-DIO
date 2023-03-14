@@ -67,6 +67,20 @@ p {
     cursor:pointer;
 }
 
+.button.button--gradient {
+    background: var(--btn-bg-color-gradient);
+    background-size: 250%;
+    outline: 3px solid transparent;
+    transition: background 1s, outline 1s, transform 1s; 
+}
+.button.button--gradient:hover {
+    background-color: transparent;
+    background-position: 100%;
+    outline: 3px solid var(--secondary-color);
+    transform: scale(1.05);
+    
+}
+
 /* Navbar */
 
 .menu {
