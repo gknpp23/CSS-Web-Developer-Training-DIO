@@ -133,6 +133,15 @@ header::after{
    }
  }
 
+ /* main */
+ .subscription{
+   /* adicionar imagem de fundo */
+ }
+ .title {
+   font-size: 2rem;
+   font-weight: 500;
+ }
+
  
 
 

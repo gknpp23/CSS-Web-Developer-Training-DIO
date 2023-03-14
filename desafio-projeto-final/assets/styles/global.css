@@ -119,3 +119,13 @@ p {
     color: var(--btn-link-color)
 }
 
+/* Containers */
+section{
+    scroll-margin-top: 80px;
+}
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 24px;
+    text-align: center;
+}
