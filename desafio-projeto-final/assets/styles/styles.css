@@ -137,12 +137,63 @@ header::after{
  .subscription{
    /* adicionar imagem de fundo */
  }
+ .subscription__plans{
+   display: flex;
+   justify-content: space-around;
+   margin: 40px 0px;
+   gap:40px;
+   perspective: 2000px;
+   perspective-origin:top ;
+
+ }
+ .subscription__card{
+   min-height: 600px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+   background: var(--card-bg-color);
+   padding: 40px 60px;
+   border-radius:10px;
+   transition: transform 1.2s ease-in-out 
+ }
+ .subscription__cards:hover{
+   /* Adicionar rotação  */
+   transform: rotateY(-45deg);
+ }
  .title {
    font-size: 2rem;
    font-weight: 500;
  }
 
- 
+.subscription__plan{
+   display: flex;
+   justify-content: space-between;
+   font-size: 1.25rem;
+   font-weight: 900;
+   margin-bottom: 16px;
+}
+.subscription__price {
+  font-size: 2rem;
+  font-family: "Raleway", sans-serif;
+  color: var(--secondary-color);
+  font-weight: 700;
+}
+.subscription__price .text--small {
+   color: var(--text-color);
+ }
+
+.subscription__description{
+   text-align: left;
+   font-size: 1.25rem;
+   padding-left: 14px;
+   margin-bottom: 14px;
+}
+.subscription__description::marker {
+   content: "+";
+   font-size: 2rem;
+   margin: 0 8px 0 0;
+
+}
 
 
 
