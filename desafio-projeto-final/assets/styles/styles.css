@@ -195,7 +195,64 @@ header::after{
 
 }
 
+/* contents */
+.contents {
+  margin: 100px auto;
+}
 
+.contents__container{
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+
+}
+
+.contents__card {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  border-radius: 16px;
+  border: 2px solid transparent;
+  /* adicionar transição com hover*/
+  transition: transform 0.9s, background 1s, border 1s;
+}
+
+.contents__image{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+  /* adicionar transição com hover */
+  transition: opacity 2s;
+}
+
+.contents__card:hover{
+  transform: scale(1.05);
+  border: 2px solid var(--tertiary-color)
+}
+
+.contents__card:hover .contents__image{
+  opacity: 0;
+}
+
+.contents__card:nth-child(1):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/hbo-hover_0.webp?raw=true");
+}
+.contents__card:nth-child(2):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/MAX-Hover.webp?raw=true");
+}
+.contents__card:nth-child(3):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/DC-Hover.webp?raw=true");
+}
+.contents__card:nth-child(4):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/WB-Hover.webp?raw=true");
+}
+.contents__card:nth-child(5):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/CN-Hover.png?raw=true");
+}
+.contents__card:nth-child(6):hover{
+  background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/UCL-Hover.webp?raw=true");
+}
 
 
 
