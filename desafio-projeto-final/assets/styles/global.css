@@ -129,3 +129,40 @@ section{
     padding: 24px;
     text-align: center;
 }
+.subscription{
+    position: relative;
+    /* adicionar imagem de fundo - pesquisar sobre atalho background */
+    background: url("https://github.com/micheleambrosio/hbomax/raw/master/assets/images/background-movies-series.png") no-repeat;
+    background-size: cover;
+}
+
+/* Footer */
+
+.footer__link {
+    margin: 0 14px;
+    letter-spacing: 2px;
+    font-size: 0.9rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: var(--link-color);
+    transition: color 0.5s;
+}
+
+.footer__link:hover{
+    color: var(--text-color);
+}
+
+.footer__copyr {
+    color: var(--link-color);
+    margin:16px 0;
+    font-size: 0.8rem;
+}
+
+.footer__social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-top: 80px;
+}

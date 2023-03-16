@@ -134,9 +134,6 @@ header::after{
  }
 
  /* main */
- .subscription{
-   /* adicionar imagem de fundo */
- }
  .subscription__plans{
    display: flex;
    justify-content: space-around;
@@ -253,6 +250,7 @@ header::after{
 .contents__card:nth-child(6):hover{
   background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/UCL-Hover.webp?raw=true");
 }
+
 
 
 
