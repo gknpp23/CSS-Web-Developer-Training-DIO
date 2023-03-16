@@ -129,7 +129,7 @@ section{
     padding: 24px;
     text-align: center;
 }
-.subscription{
+.main-bg-image{
     position: relative;
     /* adicionar imagem de fundo - pesquisar sobre atalho background */
     background: url("https://github.com/micheleambrosio/hbomax/raw/master/assets/images/background-movies-series.png") no-repeat;
