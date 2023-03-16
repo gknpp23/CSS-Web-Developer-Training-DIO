@@ -44,6 +44,10 @@
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
+body {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+}
 
 /* texts */
 p {

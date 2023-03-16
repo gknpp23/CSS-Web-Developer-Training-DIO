@@ -1,12 +1,5 @@
 @import url(global.css);
 
-
-body{
-    background-color: var(--primary-color);
-    color: var(--text-color)
-}
-
-
 .header{
     position: relative;
     margin-top: 50px;

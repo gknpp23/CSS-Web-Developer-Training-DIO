@@ -1,5 +1,66 @@
 @import url(global.css);
 
+body {
+    background-image: url("https://github.com/micheleambrosio/hbomax/raw/master/assets/images/background-movies-series.png");
+    background-size: cover;
+    height: 100vh;
+}
 .menu{
     position: relative;
+    /* Corrigir bug da navbar */
+}
+.content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70%;
+    padding: 24px;
+    font-family: "Quicksand", cursive;
+}
+.login{
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 40px;
+    width: 100%;
+    max-width: 800px;
+    background-color: var(--form-bg-color);
+    border-radius: 8px;
+
+}
+.login__title {
+    font-weight: 700;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 24px;
+}
+
+.login__label{
+    text-align: left;
+}
+
+.login__field{
+    padding: 16px;
+    font-size: 1rem;
+    color: var(--text-color);
+    background-color: var(--form-field-bg-color);
+    border: var(--form-field-border);
+    border-radius: 8px;
+}
+.login__field::placeholder{
+    color: var(--form-field-placeholder);
+}
+.login__actions {
+    margin-top: 24px;
+    text-align: left;
+}
+.login__link{
+    margin-left: 24px;
+    font-weight: 700;
+    text-decoration: none;
+    color: var(--link-color);
+    
+    
 }
