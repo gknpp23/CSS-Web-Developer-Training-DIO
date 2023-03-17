@@ -2,9 +2,6 @@
    v2.0 | 20110126
    License: none (public domain)
 */
-/* Importação de fonte */
-@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;600;700&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;700&display=swap");
 
 /* RESET */
 html, body, div, span, applet, object, iframe,
@@ -25,7 +22,7 @@ time, mark, audio, video {
 	border: 0;
 	font-size: 100%;
 	font: inherit;
-    font-family: "Raleway", sans-serif;
+	font-family: "Raleway", sans-serif;
     box-sizing: border-box;
 	vertical-align: baseline;
 	text-decoration: none;
