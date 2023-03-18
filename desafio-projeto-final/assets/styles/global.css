@@ -78,8 +78,7 @@ p {
     background-color: transparent;
     background-position: 100%;
     outline: 3px solid var(--secondary-color);
-    transform: scale(1.05);
-    
+    transform: scale(1.05); 
 }
 
 /* Navbar */

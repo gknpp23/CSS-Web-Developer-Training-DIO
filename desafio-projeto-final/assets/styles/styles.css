@@ -1,5 +1,5 @@
 @import url(global.css);
-
+/* Organizar código */
 .header{
     position: relative;
     margin-top: 50px;
@@ -8,17 +8,7 @@
     background-size: 400% 400%;
     animation: gradient 10s ease infinite alternate;
 }
-@keyframes gradient{
-   0% {
-      background-position: 0% 50%;
-   }
-   50%{
-      background-position: 100% 50%;
-   }
-   100%{
-      background-position: 0% 50%;
-   }
-}
+
 header::after{
    content: "";
    width: 100%;
@@ -95,47 +85,19 @@ header::after{
 
  .header__button {
    animation: wiggle 2.2s 1s linear infinite;
- }
- .header__button:hover{
-   animation-play-state: paused;
- }
- 
- @keyframes wiggle {
-   0%,
-   10% {
-     transform: rotate(0deg);
-   }
-   15% {
-     transform: rotate(-15deg);
-   }
-   20% {
-     transform: rotate(10deg);
-   }
-   25% {
-     transform: rotate(-10deg);
-   }
-   30% {
-     transform: rotate(10deg);
-   }
-   35% {
-     transform: rotate(-10deg);
-   }
-   40%,
-   100% {
-     transform: rotate(0deg);
-   }
+   transition: transform 1s;
  }
 
- /* main */
  .subscription__plans{
    display: flex;
    justify-content: space-around;
    margin: 40px 0px;
-   gap:40px;
+   gap:80px;
    perspective: 2000px;
-   perspective-origin:top ;
-
+   perspective-origin:top;
+  
  }
+
  .subscription__card{
    min-height: 600px;
    display: flex;
@@ -146,10 +108,17 @@ header::after{
    border-radius:10px;
    transition: transform 1.2s ease-in-out 
  }
- .subscription__cards:hover{
-   /* Adicionar rotação  */
-   transform: rotateY(-45deg);
- }
+
+ /* Efeito de rotação dos cards - Não compativel nativamente com o Firefox */
+ .subscription__plans:has(.subscription__card:nth-child(1):hover)
+  .subscription__card:nth-child(2) {
+  transform: rotateY(-45deg);
+}
+
+.subscription__plans:has(.subscription__card:nth-child(2):hover)
+  .subscription__card:nth-child(1) {
+  transform: rotateY(45deg);
+}
  .title {
    font-size: 2rem;
    font-weight: 500;
@@ -158,9 +127,9 @@ header::after{
 .subscription__plan{
    display: flex;
    justify-content: space-between;
-   font-size: 1.25rem;
+   font-size: 1.50rem;
    font-weight: 900;
-   margin-bottom: 16px;
+   margin-bottom: 20px;
 }
 .subscription__price {
   font-size: 2rem;
@@ -176,13 +145,12 @@ header::after{
    text-align: left;
    font-size: 1.25rem;
    padding-left: 14px;
-   margin-bottom: 14px;
+   margin-bottom: 20px;
 }
 .subscription__description::marker {
    content: "+";
    font-size: 2rem;
    margin: 0 8px 0 0;
-
 }
 
 /* contents */
@@ -204,7 +172,6 @@ header::after{
   background-position: center;
   border-radius: 16px;
   border: 2px solid transparent;
-  /* adicionar transição com hover*/
   transition: transform 0.9s, background 1s, border 1s;
 }
 
@@ -212,7 +179,6 @@ header::after{
   width: 100%;
   object-fit: cover;
   object-position: center;
-  /* adicionar transição com hover */
   transition: opacity 2s;
 }
 
@@ -225,6 +191,7 @@ header::after{
   opacity: 0;
 }
 
+/* Transição das imagens */
 .contents__card:nth-child(1):hover{
   background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/hbo-hover_0.webp?raw=true");
 }
@@ -244,7 +211,49 @@ header::after{
   background-image: url("https://github.com/micheleambrosio/hbomax/blob/master/assets/images/UCL-Hover.webp?raw=true");
 }
 
+/* Animações */
+@keyframes wiggle {
+  0%,
+  10% {
+    transform: rotate(0deg);
+  }
+  15% {
+    transform: rotate(-15deg);
+  }
+  20% {
+    transform: rotate(10deg);
+  }
+  25% {
+    transform: rotate(-10deg);
+  }
+  30% {
+    transform: rotate(10deg);
+  }
+  35% {
+    transform: rotate(-10deg);
+  }
+  40%,
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes gradient{
+ 0% {
+    background-position: 0% 50%;
+ }
+ 50%{
+    background-position: 100% 50%;
+ }
+ 100%{
+    background-position: 0% 50%;
+ }
+}
 
-
+/* Media Queries */
+@media  screen and (max-width:1200px) {
+  .subscription__plans{
+    flex-direction: column;
+  }
+ }
 
 
