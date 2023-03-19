@@ -56,6 +56,10 @@ body {
 .login__field::placeholder{
     color: var(--form-field-placeholder);
 }
+.login__field:invalid {
+    border-color: var(--form-field-error);
+}
+
 .login__actions {
     margin-top: 24px;
     text-align: left;
@@ -65,6 +69,16 @@ body {
     font-weight: 700;
     text-decoration: none;
     color: var(--link-color);
-    
-    
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 480px){
+    .login__actions .button {
+    display: block;
+    margin-bottom: 24px;
+    }
+    .login__link{
+        margin: 0;
+    }
 }

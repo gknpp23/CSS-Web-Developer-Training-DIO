@@ -180,3 +180,34 @@ section{
 ::-webkit-scrollbar-thumb:hover {
     background: var(--secondary-color);
 }
+
+/* Media Queries */
+@media screen and (max-width:480px){
+    
+    .menu{
+      flex-direction: column;
+      gap: 24px;
+      padding: 32px 24px;
+    }
+  
+    .menu__logo{
+      max-width: 100px;
+      margin-right: 28px;
+    }
+    .footer__link{
+        display: block;
+        margin-bottom: 16px;
+    }
+}
+@media screen and (max-width:340px){
+    .menu{
+        padding: 12px 16px;
+    }
+    .menu__links{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        gap: 5px;
+        margin-left: 30px;
+    }
+}
