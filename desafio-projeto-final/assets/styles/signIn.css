@@ -4,11 +4,10 @@ body {
     background-image: url("https://github.com/micheleambrosio/hbomax/raw/master/assets/images/background-movies-series.png");
     background-size: cover;
     height: 100vh;
-    
 }
+
 .menu{
     position: relative;
-    
 }
 
 .content {
@@ -20,6 +19,7 @@ body {
     padding: 24px;
     font-family: "Quicksand", cursive;
 }
+
 .login{
     display: flex;
     flex-direction: column;
@@ -31,6 +31,7 @@ body {
     border-radius: 8px;
 
 }
+
 .login__title {
     font-weight: 700;
     font-size: 1.25rem;
@@ -51,11 +52,12 @@ body {
     background-color: var(--form-field-bg-color);
     border: var(--form-field-border);
     border-radius: 8px;
-    /* adicionar validação */
+
 }
 .login__field::placeholder{
     color: var(--form-field-placeholder);
 }
+/* Validação básica*/
 .login__field:invalid {
     border-color: var(--form-field-error);
 }
