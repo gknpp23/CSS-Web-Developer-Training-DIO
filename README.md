@@ -40,22 +40,25 @@
 ## Deploy da Aplicação :dash:
 
 ###   Projeto 01
-
+<a> </a>
+https://formacaocss.netlify.app
 <img src="img/proj01.png" align="center" width="1200">
 
 <br>
 
 ###   Projeto 02
-
+https://discord-clone-resp.netlify.app
 <img src="img/proj02.png" align="center" width="1200">
 
 
 <br>
 
 ###   Projeto 03
-
+https://hboclonesite.netlify.app
 <img src="img/proj03.png" align="center" width="1200">
-<p></p>
+
+### Versão Mobile
+
 <img src="img/proj02-MB.png" align="left">
 <img src="img/proj-03-MB.png" align="center">
 
