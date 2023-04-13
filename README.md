@@ -59,10 +59,13 @@
 <br>
 <img src="img/proj03.png" align="center" width="1200">
 
-### Versão Mobile
+<h3 align="center">Versões Mobile</h3>
 
-<img src="img/proj02-MB.png" align="left" width="350">
-<img src="img/proj-03-MB.png" align="center" width="350">
+<p align="center">
+  <img src="img/proj02-MB.png" width="350"> 
+  <img src="img/proj-03-MB.png" width="350" align="top">
+</p>
+
 
 <br>
 
