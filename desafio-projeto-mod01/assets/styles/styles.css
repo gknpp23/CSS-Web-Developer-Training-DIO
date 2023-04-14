@@ -1,4 +1,5 @@
 @import url(reset.css);
+
 /* estilos gerais para elementos */
 body {
     background-color: black;
@@ -18,6 +19,7 @@ h2 {
 span {
     color: #33A8DB
 }
+
 /* Header */
 .banner{
     height: 96vh;
@@ -81,7 +83,7 @@ span {
     border-image: linear-gradient(#3BA1CD, #1572B7);
     border-image-slice: 10;
     border-radius: 30px;
-  }
+}
 
 /* Sections */
 
@@ -144,4 +146,74 @@ footer img{
 footer a{
     color: #33A8DB;
     font-weight: bold;
+}
+
+
+@media screen and (max-width: 700px){
+    h2 {
+        margin-bottom: 7%;
+    }
+    .banner .banner-content {
+        width: 100%;
+        margin: auto;
+    }
+
+    #transform-world p {    
+        font-size: 3.25em;
+    }
+    .banner .banner-content h1{
+        font-weight: 900;
+        font-size: 2.5rem;
+     }
+    
+     .banner .banner-content p {
+        font-size: 1.5rem;
+        line-height: 30px;
+    }
+    
+      .banner .banner-content .logo {
+        margin-bottom: 2.25rem;
+    }
+
+    #course-content {
+        width: 90vw;
+        text-align: center;
+    }
+    #course-content p {
+        font-size: 1rem;
+        line-height: 1.5rem;
+    }
+    #course-content .modules-list {
+        margin: 2em 0;
+    }
+    #course-content .modules-list .module {
+        width: 100%;
+        line-height: 1.5em;
+    }
+
+    #transform-world {
+        height: 60vh;
+        background-size: 400%;
+        padding: 3.75rem;
+    }
+    
+    #transform-world p {    
+        font-size: 3.5em;
+    }
+    
+    
+    #professional-challenges{
+        width: 90vw;     
+    }
+
+    #professional-challenges img{
+        max-width: 85vw;
+
+    }
+    
+    #professional-challenges p{
+        max-width: 85vw;
+        margin: 6% auto;
+        line-height: 1.5em;
+    }
 }
