@@ -59,13 +59,21 @@
 <br>
 <img src="img/proj03.png" align="center" width="1200">
 
+### Projeto extra
+#### Feito com Bootstrap
+> https://coffeshopnice.netlify.app/
+<img src="img/proj-BS.png" align="center" width="1200">
 <h3 align="center">Versões Mobile</h3>
 
 <p align="center">
-  <img src="img/proj02-MB.png" width="350"> 
-  <img src="img/proj-03-MB.png" width="350" align="top">
+  <img src="img/proj01-MB.png" width="350" height="500"> 
+  <img src="img/proj02-MB.png" width="350" height="500">
 </p>
-
+<hr>
+<p align="center">
+  <img src="img/proj-03-MB.png" width="350" height="500"> 
+  <img src="img/proj-BS-MB.png" width="350" height="500">
+</p>
 
 <br>
 
